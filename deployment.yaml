@@ -1,0 +1,81 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+  generation: 1
+  labels:
+    app: finance-manager
+  name: finance-manager
+  namespace: finance-manager
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: finance-manager
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: finance-manager
+    spec:
+      containers:
+      - image: gcr.io/builder-budget-app/finance-manager:cceaff
+        imagePullPolicy: IfNotPresent
+        name: finance-manager-app
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        env:
+        - name: APP_KEY
+          valueFrom:
+            secretKeyRef:
+              name: firefly-iii-secrets-4467bkdctf
+              key: app_key
+        - name: DB_HOST
+          value: localhost
+        - name: DB_CONNECTION
+          value: mysql
+        - name: DB_DATABASE
+          value: "fireflyiii"
+        - name: DB_USERNAME
+          value: "root"
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: firefly-iii-secrets-4467bkdctf
+              key: db_password
+        - name: TRUSTED_PROXIES
+          value: "**"
+        ports:
+        - containerPort: 8080
+          name: firefly-iii
+      - image: yobasystems/alpine-mariadb:latest
+        name: mysql
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: firefly-iii-secrets-4467bkdctf
+              key: db_password
+        ports:
+        - containerPort: 3306
+        volumeMounts:
+            - name: finance-manager-mysql-data
+              mountPath: /var/lib/mysql  
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+      volumes:
+      - name: finance-manager-mysql-data
+        persistentVolumeClaim:
+            claimName: finance-manager-mysql-data

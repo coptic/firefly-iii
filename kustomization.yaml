@@ -1,0 +1,7 @@
+secretGenerator:
+- name: firefly-iii-secrets
+  literals:
+  - db_password=TheLordisMyShephard
+  - app_key=12345678901234567890123456789012
+  - access_token=TheTokenAccess
+  - static_cron_token=abcd1234efgh

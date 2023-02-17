@@ -1,6 +1,6 @@
 {
     "firefly": {
-        "welcome_back": "What's playing?",
+        "welcome_back": "Aye, Aye Captain!",
         "flash_error": "Error!",
         "flash_success": "Success!",
         "close": "Close",
@@ -118,7 +118,7 @@
         "message_content_title": "Webhook message content",
         "message_content_help": "This is the content of the message that was sent (or tried) using this webhook.",
         "attempt_content_title": "Webhook attempts",
-        "attempt_content_help": "These are all the unsuccessful attempts of this webhook message to submit to the configured URL. After some time, Firefly III will stop trying.",
+        "attempt_content_help": "These are all the unsuccessful attempts of this webhook message to submit to the configured URL. After some time, Captain Money will stop trying.",
         "no_attempts": "There are no unsuccessful attempts. That's a good thing!",
         "webhook_attempt_at": "Attempt at {moment}",
         "logs": "Logs",

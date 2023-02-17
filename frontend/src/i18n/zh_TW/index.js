@@ -214,7 +214,7 @@ export default {
         "balance": "\u9918\u984d",
         "budgets": "\u9810\u7b97",
         "subscriptions": "Subscriptions",
-        "welcome_back": "What's playing?",
+        "welcome_back": "Aye, Aye Captain zh?",
         "bills_to_pay": "\u5f85\u4ed8\u5e33\u55ae",
         "net_worth": "\u6de8\u503c",
         "pref_last365": "Last year",

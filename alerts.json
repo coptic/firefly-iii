@@ -21,79 +21,79 @@
 		"version": "5.5.0",
 		"advisory": true,
 		"level": "info",
-		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+		"message": "This version of Captain Money contains a security vulnerability, and you should update as soon as possible."
 	},
 	{
 		"version": "5.5.1",
 		"advisory": true,
 		"level": "info",
-		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+		"message": "This version of Captain Money contains a security vulnerability, and you should update as soon as possible."
 	},
 	{
 		"version": "5.5.2",
 		"advisory": true,
 		"level": "info",
-		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+		"message": "This version of Captain Money contains a security vulnerability, and you should update as soon as possible."
 	},
 	{
 		"version": "5.5.3",
 		"advisory": true,
 		"level": "info",
-		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+		"message": "This version of Captain Money contains a security vulnerability, and you should update as soon as possible."
 	},
 	{
 		"version": "5.5.4",
 		"advisory": true,
 		"level": "info",
-		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+		"message": "This version of Captain Money contains a security vulnerability, and you should update as soon as possible."
 	},
 	{
 		"version": "5.5.5",
 		"advisory": true,
 		"level": "info",
-		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+		"message": "This version of Captain Money contains a security vulnerability, and you should update as soon as possible."
 	},
 	{
 		"version": "5.5.6",
 		"advisory": true,
 		"level": "info",
-		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+		"message": "This version of Captain Money contains a security vulnerability, and you should update as soon as possible."
 	},
 	{
 		"version": "5.5.7",
 		"advisory": true,
 		"level": "info",
-		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+		"message": "This version of Captain Money contains a security vulnerability, and you should update as soon as possible."
 	},
 	{
 		"version": "5.5.8",
 		"advisory": true,
 		"level": "info",
-		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+		"message": "This version of Captain Money contains a security vulnerability, and you should update as soon as possible."
 	},
 	{
 		"version": "5.5.9",
 		"advisory": true,
 		"level": "info",
-		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+		"message": "This version of Captain Money contains a security vulnerability, and you should update as soon as possible."
 	},
 	{
 		"version": "5.5.10",
 		"advisory": true,
 		"level": "info",
-		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+		"message": "This version of Captain Money contains a security vulnerability, and you should update as soon as possible."
 	},
 	{
 		"version": "5.5.11",
 		"advisory": true,
 		"level": "warning",
-		"message": "This version of Firefly III contains a security vulnerability (Google CVE-2021-3663), and you should update as soon as possible."
+		"message": "This version of Captain Money contains a security vulnerability (Google CVE-2021-3663), and you should update as soon as possible."
 	},
 	{
 		"version": "5.5.11",
 		"advisory": true,
 		"level": "warning",
-		"message": "This version of Firefly III contains a security vulnerability (Google CVE-2021-3663), and you should update as soon as possible."
+		"message": "This version of Captain Money contains a security vulnerability (Google CVE-2021-3663), and you should update as soon as possible."
 	},
 	{
 		"version": "5.6.0-alpha.1",

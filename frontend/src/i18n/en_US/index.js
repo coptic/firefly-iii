@@ -214,7 +214,7 @@ export default {
         "balance": "Balance",
         "budgets": "Budgets",
         "subscriptions": "Subscriptions",
-        "welcome_back": "What's playing?",
+        "welcome_back": "Aye Aye, Captain",
         "bills_to_pay": "Bills to pay",
         "net_worth": "Net worth",
         "pref_last365": "Last year",

@@ -50,7 +50,7 @@ return [
     'month_to_date'                        => 'Month to date',
     'year_to_date'                         => 'Year to date',
     'YTD'                                  => 'YTD',
-    'welcome_back'                         => 'What\'s playing?',
+    'welcome_back'                         => 'Aye, Aye Captain!',
     'everything'                           => 'ทุกอย่าง',
     'today'                                => 'วันนี้',
     'customRange'                          => 'Custom range',

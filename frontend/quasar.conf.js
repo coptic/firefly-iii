@@ -181,8 +181,8 @@ module.exports = configure(function (ctx) {
       },
 
       manifest: {
-        name: 'Firefly III',
-        short_name: 'Firefly III',
+        name: 'Captain Money',
+        short_name: 'Captain Money',
         description: 'Personal Finances Manager',
         start_url: '/',
         display: 'standalone',

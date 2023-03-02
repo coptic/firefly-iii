@@ -61,6 +61,11 @@
                     <q-item-label>Delete</q-item-label>
                   </q-item-section>
                 </q-item>
+                <q-item v-close-popup clickable @click="deleteBudget(props.row.id, props.row.name)">
+                  <q-item-section>
+                    <q-item-label>Make Super Budget</q-item-label>
+                  </q-item-section>
+                </q-item>
               </q-list>
             </q-btn-dropdown>
           </q-td>

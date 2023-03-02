@@ -50,7 +50,7 @@ return [
     'month_to_date'                        => 'Month to date',
     'year_to_date'                         => 'Year to date',
     'YTD'                                  => 'YTD',
-    'welcome_back'                         => 'What\'s playing?',
+    'welcome_back'                         => 'Aye, Aye Captain!',
     'everything'                           => '所有',
     'today'                                => '今天',
     'customRange'                          => '自訂範圍',

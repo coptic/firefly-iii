@@ -72,6 +72,7 @@ return [
         'navigate_periods' => ['element' => '#periodNavigator'],
         'new_budget'       => ['element' => '#createBudgetBox'],
         'list_of_budgets'  => ['element' => '#budgetList'],
+        'super_budget'  => ['element' => '#budgetList'],
         'outro'            => [],
 
     ],

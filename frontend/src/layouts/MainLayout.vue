@@ -2,7 +2,7 @@
   - MainLayout.vue
   - Copyright (c) 2022 james@firefly-iii.org
   -
-  - This file is part of Firefly III (https://github.com/firefly-iii).
+  - This file is part of Captain Money (https://github.com/firefly-iii).
   -
   - This program is free software: you can redistribute it and/or modify
   - it under the terms of the GNU Affero General Public License as
@@ -41,9 +41,9 @@ page container: q-ma-xs (margin all, xs) AND q-mb-md to give the page content so
 
         <q-toolbar-title>
           <q-avatar>
-            <img alt="Firefly III Logo" src="maskable-icon.svg" title="Firefly III">
+            <img alt="Captain Money Logo" src="maskable-icon.svg" title="Captain Money">
           </q-avatar>
-          Firefly III
+          Captain Money
         </q-toolbar-title>
 
         <q-select
@@ -165,6 +165,12 @@ page container: q-ma-xs (margin all, xs) AND q-mb-md to give the page content so
                 Dashboard
               </q-item-section>
             </q-item>
+                        <q-expansion-item
+              :default-opened="this.$route.name === 'transactions.index' || this.$route.name === 'transactions.show'"
+              expand-separator
+              icon="fas fa-exchange-alt"
+              label="Budgets"
+            >
             <q-item v-ripple :to="{ name: 'budgets.index' }" clickable>
               <q-item-section avatar>
                 <q-icon name="fas fa-chart-pie"/>
@@ -173,6 +179,14 @@ page container: q-ma-xs (margin all, xs) AND q-mb-md to give the page content so
                 Budgets
               </q-item-section>
             </q-item>
+            <q-item-section avatar>
+              <q-icon name="fas fa-chart-pie"/>
+              </q-item-section>
+              <q-item-section>
+                Super Budgets
+              </q-item-section>
+            </q-item>
+            </q-expansion-item>
             <q-item v-ripple :to="{ name: 'subscriptions.index' }" clickable>
               <q-item-section avatar>
                 <q-icon name="far fa-calendar-alt"/>
@@ -338,7 +352,7 @@ page container: q-ma-xs (margin all, xs) AND q-mb-md to give the page content so
     <q-footer class="bg-grey-8 text-white" bordered>
       <q-toolbar>
         <div>
-          <small>Firefly III v v6.0.0-beta.2 &copy; James Cole, AGPL-3.0-or-later.</small>
+          <small>Captain Money based on Firefly III v v6.0.0-beta.2 &copy; James Cole, AGPL-3.0-or-later.</small>
         </div>
       </q-toolbar>
     </q-footer>

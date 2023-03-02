@@ -4,7 +4,7 @@
  * index.php
  * Copyright (c) 2020 james@firefly-iii.org
  *
- * This file is part of Firefly III (https://github.com/firefly-iii).
+ * This file is part of Captain Money (https://github.com/firefly-iii).
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
@@ -32,7 +32,7 @@ echo '<!DOCTYPE HTML>
         window.location.href = "./public/";
         }, 8000);
     </script>
-    <title>Firefly III</title>
+    <title>Captain Money</title>
     <style>
     p {font-family:Arial,sans-serif;font-size:18px;color:#222;text-align:center;}
 </style>

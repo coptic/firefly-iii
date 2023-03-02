@@ -13,11 +13,11 @@
         {% if subTitle %}
             {{ subTitle }} »
         {% endif %}
-        {% if title != "Firefly III" %}
+        {% if title != "Captain Money" %}
             {{ title }} »
         {% endif %}
 
-        Firefly III
+        Captain Money
 
     </title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
@@ -43,7 +43,7 @@
     <link href="v1/lib/adminlte/css/skins/skin-light.min.css?v={{ FF_VERSION }}" rel="stylesheet" type="text/css" nonce="{{ JS_NONCE }}" media="(prefers-color-scheme: light)">
     <link href="v1/lib/adminlte/css/skins/skin-dark.min.css?v={{ FF_VERSION }}" rel="stylesheet" type="text/css" nonce="{{ JS_NONCE }}"  media="(prefers-color-scheme: dark)">
 
-    {# Firefly III customisations #}
+    {# Captain Money customisations #}
     <link href="v1/css/firefly.css?v={{ FF_VERSION }}" rel="stylesheet" type="text/css" nonce="{{ JS_NONCE }}">
 
     {# Extra CSS for the demo: #}
@@ -75,7 +75,7 @@
             {# mini logo for sidebar mini 50x50 pixels #}
             <span class="logo-mini">FF</span>
             {# logo for regular state and mobile devices #}
-            <span class="logo-lg"><strong>Firefly</strong>III</span>
+            <span class="logo-lg"><strong>Captain Money</strong></span>
         </a>
 
         <nav class="navbar navbar-static-top" role="navigation">
@@ -150,7 +150,7 @@
         <div class="pull-right">
             <b class="hidden-xs">{{ 'version'|_ }}</b> <a href="{{ route('debug') }}">{{ Config.get('firefly.version') }}</a>
         </div>
-        <strong><a href="https://github.com/firefly-iii/firefly-iii">Firefly III</a></strong>
+        <strong><a href="https://github.com/coptic/firefly-iii">Captain Money</a></strong>
         <small class="text-muted">&copy; James Cole, <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL-3.0-or-later</a>.</small>
         {% if FF_IS_ALPHA %}<small class="text-danger hidden-xs"><br>{{ 'is_alpha_warning'|_ }}</small>{% endif %}
         {% if FF_IS_BETA %}<small class="text-warning hidden-xs"><br>{{ 'is_beta_warning'|_ }}</small>{% endif %}
@@ -208,7 +208,7 @@
 <script src="v1/lib/adminlte/js/adminlte.min.js?v={{ FF_VERSION }}" type="text/javascript" nonce="{{ JS_NONCE }}"></script>
 <script type="text/javascript" src="v1/js/lib/accounting.min.js?v={{ FF_VERSION }}" nonce="{{ JS_NONCE }}"></script>
 
-{# Firefly III code#}
+{# Captain Money code#}
 <script type="text/javascript" src="v1/js/ff/firefly.js?v={{ FF_VERSION }}" nonce="{{ JS_NONCE }}"></script>
 <script type="text/javascript" src="v1/js/ff/help.js?v={{ FF_VERSION }}" nonce="{{ JS_NONCE }}"></script>
 {% if not shownDemo %}
@@ -222,24 +222,6 @@
 {% endif %}
 
 {% block scripts %}{% endblock %}
-
-{% if config('firefly.tracker_site_id') != '' and config('firefly.tracker_url') != '' %}
-    <!-- This tracker tag is only here because this instance of Firefly III was purposefully configured to include it -->
-    <!-- Your own installation will NOT include it, unless you explicitely configure it to have it. -->
-    <script type="text/javascript" nonce="{{ JS_NONCE }}">
-        var _paq = window._paq || [];
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-            var u="//{{ config('firefly.tracker_url') }}/";
-            _paq.push(['setTrackerUrl', u+'matomo.php']);
-            _paq.push(['setSiteId', '{{ config('firefly.tracker_site_id') }}']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-        })();
-    </script>
-    <noscript><p><img src="//{{ config('firefly.tracker_url') }}/matomo.php?idsite={{ config('firefly.tracker_site_id') }}&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-{% endif %}
 
 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
     <input type="hidden" name="_token" value="{{ csrf_token() }}" />

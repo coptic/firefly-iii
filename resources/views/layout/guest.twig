@@ -7,7 +7,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="color-scheme" content="light dark">
 
-    <title>Firefly III
+    <title>Captain Money
 
         {% if title != "Firefly" and title != "" %}
             // {{ title }}
@@ -44,7 +44,7 @@
     <link href="v1/lib/adminlte/css/skins/skin-light.min.css?v={{ FF_VERSION }}" rel="stylesheet" type="text/css" nonce="{{ JS_NONCE }}" media="(prefers-color-scheme: light)">
     <link href="v1/lib/adminlte/css/skins/skin-dark.min.css?v={{ FF_VERSION }}" rel="stylesheet" type="text/css" nonce="{{ JS_NONCE }}"  media="(prefers-color-scheme: dark)">
 
-    {# Firefly III customisations #}
+    {# Captain Money customisations #}
     <link href="v1/css/firefly.css?v={{ FF_VERSION }}" rel="stylesheet" type="text/css" nonce="{{ JS_NONCE }}">
 
     <!--[if lt IE 9]>
@@ -59,7 +59,7 @@
 <body class="login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="{{ route('index') }}"><strong>Firefly</strong>III</a>
+        <a href="{{ route('index') }}"><strong>Captain Money</strong></a>
     </div>
     {% block content %}{% endblock %}
 </div>
@@ -72,7 +72,7 @@
 <script type="text/javascript" src="v1/js/ff/guest.js?v={{ FF_VERSION }}" nonce="{{ JS_NONCE }}"></script>
 
 {% if config('firefly.tracker_site_id') != '' and config('firefly.tracker_url') != '' %}
-    <!-- This tracker tag is only here because this instance of Firefly III was purposefully configured to include it -->
+    <!-- This tracker tag is only here because this instance of Captain Money was purposefully configured to include it -->
     <!-- Your own installation will NOT include it, unless you explicitely configure it to have it. -->
     <script type="text/javascript" nonce="{{ JS_NONCE }}">
         var _paq = window._paq || [];

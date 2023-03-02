@@ -2,7 +2,7 @@
   "name": "firefly-iii",
   "version": "0.0.1",
   "description": "Personal finances manager",
-  "productName": "Firefly III",
+  "productName": "Captain Money",
   "author": "James Cole <james@firefly-iii.org>",
   "private": true,
   "scripts": {

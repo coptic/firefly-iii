@@ -85,7 +85,7 @@ class VersionCheckResult extends Notification
     {
         return (new SlackMessage())->content($this->message)
                                    ->attachment(function ($attachment) {
-                                       $attachment->title('Firefly III @ GitHub', 'https://github.com/firefly-iii/firefly-iii/releases');
+                                       $attachment->title('Captain Money @ GitHub', 'https://github.com/coptic/firefly-iii/releases');
                                    });
     }
 

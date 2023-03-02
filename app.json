@@ -1,7 +1,7 @@
 {
   "name": "Captain Money",
   "description": "A free and open source personal finances manager",
-  "repository": "https://github.com/firefly-iii/firefly-iii",
+  "repository": "https://github.com/coptic/firefly-iii",
   "website": "https://firefly-iii.org/",
   "logo": "https://raw.githubusercontent.com/firefly-iii/firefly-iii/main/public/mstile-150x150.png",
   "keywords": [

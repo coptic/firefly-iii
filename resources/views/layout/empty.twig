@@ -4,7 +4,7 @@
     <base href="{{ route('index') }}/">
     <meta charset="UTF-8">
     <meta name="robots" content="noindex, nofollow, noarchive, noodp, NoImageIndex, noydir">
-    <title>Firefly III</title>
+    <title>Captain Money</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
@@ -34,7 +34,7 @@
     <link href="v1/lib/adminlte/css/skins/skin-light.min.css?v={{ FF_VERSION }}" rel="stylesheet" type="text/css" nonce="{{ JS_NONCE }}" media="(prefers-color-scheme: light)">
     <link href="v1/lib/adminlte/css/skins/skin-dark.min.css?v={{ FF_VERSION }}" rel="stylesheet" type="text/css" nonce="{{ JS_NONCE }}"  media="(prefers-color-scheme: dark)">
 
-    {# Firefly III customisations #}
+    {# Captain Money customisations #}
     <link href="v1/css/firefly.css?v={{ FF_VERSION }}" rel="stylesheet" type="text/css" nonce="{{ JS_NONCE }}">
 
     <!--[if lt IE 9]>
@@ -49,7 +49,7 @@
 <body class="login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="{{ route('index') }}"><strong>Firefly</strong>III</a>
+        <a href="{{ route('index') }}"><strong>Captain Money</strong></a>
     </div>
     {% block content %}{% endblock %}
 </div>
@@ -57,7 +57,7 @@
 <script src="v1/js/app.js?v={{ FF_VERSION }}" type="text/javascript" nonce="{{ JS_NONCE }}"></script>
 
 {% if config('firefly.tracker_site_id') != '' and config('firefly.tracker_url') != '' %}
-    <!-- This tracker tag is only here because this instance of Firefly III was purposefully configured to include it -->
+    <!-- This tracker tag is only here because this instance of Captain Money was purposefully configured to include it -->
     <!-- Your own installation will NOT include it, unless you explicitely configure it to have it. -->
     <script type="text/javascript" nonce="{{ JS_NONCE }}">
         var _paq = window._paq || [];

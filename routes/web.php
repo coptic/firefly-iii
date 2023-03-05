@@ -253,6 +253,7 @@ Route::group(
 
         // create
         Route::get('create', ['uses' => 'Budget\CreateController@create', 'as' => 'create']);
+        Route::get('supercreate', ['uses' => 'Budget\CreateController@create', 'as' => 'supercreate']);
         Route::post('store', ['uses' => 'Budget\CreateController@store', 'as' => 'store']);
 
         // edit
@@ -268,7 +269,8 @@ Route::group(
              ->where(['end_date' => DATEFORMAT]);
 
         // reorder budgets
-        Route::post('reorder', ['uses' => 'Budget\IndexController@reorder', 'as' => 'reorder']);
+        Route::post('reorder', ['uses' => 'Budget\IndexController@reorder',     'as' => 'reorder']);
+        Route::get('cashflow',['uses' => 'Budget\CashFlowController@cashflow', 'as' => 'cashflow']);
 
         // index
         Route::get('{start_date?}/{end_date?}', ['uses' => 'Budget\IndexController@index', 'as' => 'index'])
@@ -727,7 +729,7 @@ Route::group(
         Route::get('frontpage/piggy-banks', ['uses' => 'Json\FrontpageController@piggyBanks', 'as' => 'fp.piggy-banks']);
 
         // currency conversion:
-        Route::get('rate/{fromCurrencyCode}/{toCurrencyCode}/{date}', ['uses' => 'Json\ExchangeController@getRate', 'as' => 'rate']);
+        // Route::get('rate/{fromCurrencyCode}/{toCurrencyCode}/{date}', ['uses' => 'Json\ExchangeController@getRate', 'as' => 'rate']);
 
         // intro things:
         Route::post('intro/finished/{route}/{specificPage?}', ['uses' => 'Json\IntroController@postFinished', 'as' => 'intro.finished']);

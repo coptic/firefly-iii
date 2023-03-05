@@ -169,10 +169,17 @@ page container: q-ma-xs (margin all, xs) AND q-mb-md to give the page content so
               <q-item-section avatar>
                 <q-icon name="fas fa-chart-pie"/>
               </q-item-section>
+               <q-expansion-item
+              :default-opened="this.$route.name === 'transactions.index' || this.$route.name === 'transactions.show'"
+              expand-separator
+              icon="fas fa-exchange-alt"
+              label="Transactions"
+            >
               <q-item-section>
-                Budgets
+                Budgets in VUE MainLayout
               </q-item-section>
             </q-item>
+            </q-expansion-item>
             <q-item v-ripple :to="{ name: 'subscriptions.index' }" clickable>
               <q-item-section avatar>
                 <q-icon name="far fa-calendar-alt"/>

@@ -1,0 +1,15 @@
+{% extends './layout/default' %}
+
+{% block breadcrumbs %}
+    {{ Breadcrumbs.render(Route.getCurrentRoute.getName) }}
+{% endblock %}
+
+{% block content %}
+
+ <h2>THIS IS WHERE THE SUPER BUDGET TOOL WILL BE </h2>
+
+
+{% endblock %}
+{% block scripts %}
+    <script type="text/javascript" src="v1/js/ff/budgets/create.js?v={{ FF_VERSION }}" nonce="{{ JS_NONCE }}"></script>
+{% endblock %}

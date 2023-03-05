@@ -516,7 +516,7 @@ Route::group(
         Route::delete('{recurrence}', ['uses' => 'DestroyController@destroy', 'as' => 'delete']);
 
         Route::get('{recurrence}/transactions', ['uses' => 'ListController@transactions', 'as' => 'transactions']);
-        Route::post('trigger', ['uses' => 'RecurrenceController@trigger', 'as' => 'trigger']);
+        // Route::post('trigger', ['uses' => 'Json\RecurrenceController@trigger', 'as' => 'trigger']);
     }
 );
 

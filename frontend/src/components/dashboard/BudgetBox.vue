@@ -29,7 +29,7 @@ TODO needs better (hover) color.
       <q-item>
         <q-item-section>
           <q-item-label><strong>
-            Budgets
+            Budgetings
           </strong></q-item-label>
         </q-item-section>
       </q-item>

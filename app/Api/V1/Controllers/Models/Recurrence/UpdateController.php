@@ -39,7 +39,7 @@ class UpdateController extends Controller
     private RecurringRepositoryInterface $repository;
 
     /**
-     * RecurrenceController constructor.
+     *  constructor.
      *
 
      */

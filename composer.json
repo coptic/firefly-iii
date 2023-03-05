@@ -113,6 +113,7 @@
     "ergebnis/phpstan-rules": "^1.0",
     "fakerphp/faker": "1.*",
     "filp/whoops": "2.*",
+    "laravel/sail": "^1.21",
     "mockery/mockery": "1.*",
     "nunomaduro/larastan": "^2.0",
     "phpstan/phpstan": "^1.9",

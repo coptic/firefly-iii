@@ -423,7 +423,13 @@ try {
             $breadcrumbs->push(trans('firefly.create_new_budget'), route('budgets.create'));
         }
     );
-
+    Breadcrumbs::for(
+        'budgets.cashflow',
+        static function (Generator $breadcrumbs) {
+            $breadcrumbs->parent('budgets.index');
+            $breadcrumbs->push(trans('firefly.cashflow'), route('budgets.cashflow'));
+        }
+    );
     Breadcrumbs::for(
         'budgets.edit',
         static function (Generator $breadcrumbs, Budget $budget) {

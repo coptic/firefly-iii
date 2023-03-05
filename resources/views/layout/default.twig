@@ -17,7 +17,7 @@
             {{ title }} »
         {% endif %}
 
-        Firefly III
+        CAPTAIN MONEY
 
     </title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
@@ -75,7 +75,7 @@
             {# mini logo for sidebar mini 50x50 pixels #}
             <span class="logo-mini">FF</span>
             {# logo for regular state and mobile devices #}
-            <span class="logo-lg"><strong>Firefly</strong>III</span>
+            <span class="logo-lg"><strong>Captain Money</strong></span>
         </a>
 
         <nav class="navbar navbar-static-top" role="navigation">
@@ -150,7 +150,7 @@
         <div class="pull-right">
             <b class="hidden-xs">{{ 'version'|_ }}</b> <a href="{{ route('debug') }}">{{ Config.get('firefly.version') }}</a>
         </div>
-        <strong><a href="https://github.com/firefly-iii/firefly-iii">Firefly III</a></strong>
+        <strong>Captain Money based on <a href="https://github.com/firefly-iii/firefly-iii">Firefly III</a></strong>
         <small class="text-muted">&copy; James Cole, <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL-3.0-or-later</a>.</small>
         {% if FF_IS_ALPHA %}<small class="text-danger hidden-xs"><br>{{ 'is_alpha_warning'|_ }}</small>{% endif %}
         {% if FF_IS_BETA %}<small class="text-warning hidden-xs"><br>{{ 'is_beta_warning'|_ }}</small>{% endif %}
@@ -244,6 +244,5 @@
 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
 </form>
-
 </body>
 </html>

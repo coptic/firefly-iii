@@ -20,6 +20,7 @@
 /** global: moment, token, dateRangeMeta,dateRangeConfig, accountingConfig, accounting, currencySymbol, mon_decimal_point, frac_digits, showFullList, showOnlyTop, mon_thousands_sep */
 
 
+<<<<<<< HEAD
 $.ajaxSetup({
     headers: {
         'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
@@ -36,9 +37,10 @@ function parseToLocalDates() {
     });
 }
 
+=======
+>>>>>>> 9f519bda06 (merged 6.0.4)
 $(function () {
     "use strict";
-
 
     configAccounting(currencySymbol);
 
@@ -54,7 +56,11 @@ $(function () {
         $('button[type="submit"]').prop('disabled', true);
     });
 
-
+    $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
 
     // when you click on a currency, this happens:
     $('.currency-option').on('click', currencySelect);
@@ -82,18 +88,11 @@ $(function () {
         function (start, end, label) {
 
             // send post.
-            $.ajax({
-                url: dateRangeMeta.url,
-                data: {
-                    start: start.format('YYYY-MM-DD'),
-                    end: end.format('YYYY-MM-DD'),
-                    label: label
-                },
-                type: 'POST',
-                headers: {
-                    'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content'),
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                }
+            $.post(dateRangeMeta.url, {
+                start: start.format('YYYY-MM-DD'),
+                end: end.format('YYYY-MM-DD'),
+                label: label,
+                _token: token
             }).done(function () {
                 window.location.reload(true);
             }).fail(function () {

@@ -86,6 +86,7 @@ function cloneTransaction(e) {
     var groupId = parseInt(button.data('id'));
 
     $.post(cloneGroupUrl, {
+        _token: token,
         id: groupId
     }).done(function (data) {
         // lame but it works

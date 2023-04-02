@@ -23,7 +23,9 @@ declare(strict_types=1);
 
 namespace Tests\integration\Api\Autocomplete;
 
-use Tests\integration\TestCase;
+use Laravel\Passport\Passport;
+use Illuminate\Support\Facades\Log;
+use Tests\TestCase;
 
 /**
  * Class AccountControllerTest

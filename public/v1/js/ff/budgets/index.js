@@ -224,6 +224,7 @@ function deleteBudgetLimit(e) {
     var url = deleteBudgetLimitUrl.replace('REPLACEME', budgetLimitId.toString());
     $.post(url, {_token: token}).then(function () {
         $('.bl_entry[data-budget-limit-id="' + budgetLimitId + '"]').remove();
+
     });
     return false;
 }

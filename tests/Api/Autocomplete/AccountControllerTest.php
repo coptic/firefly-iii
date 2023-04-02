@@ -24,7 +24,7 @@ declare(strict_types=1);
 namespace Tests\Api\Autocomplete;
 
 use Laravel\Passport\Passport;
-use Log;
+use Illuminate\Support\Facades\Log;
 use Tests\TestCase;
 
 /**

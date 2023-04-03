@@ -38,7 +38,7 @@
 // In this case, light.css will be downloaded with `highest` priority.
 if (window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
 document.documentElement.style.display = 'none';
-document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="v1/lib/adminlte/css/skins/skin-light.min.css?v= {{ FF_VERSION }}" nonce=" {{ JS_NONCE }}" onload="document.documentElement.style.display = \'\'">',);
+document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="v1/lib/adminlte/css/skins/skin-light.min.css?v=   {{ FF_VERSION }}" nonce="   {{ JS_NONCE }}" onload="document.documentElement.style.display = \'\'">',);
 }
 		</script>
 		<link href="v1/lib/adminlte/css/skins/skin-light.min.css?v={{ FF_VERSION }}" rel="stylesheet" type="text/css" nonce="{{ JS_NONCE }}" media="(prefers-color-scheme: light)">
@@ -57,9 +57,9 @@ document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="v1/l
 		{# Any local custom CSS.  #}
 		{% block styles %}{% endblock %}
 		<!--[if lt IE 9]>
-		    <script src="v1/js/lib/html5shiv.min.js?v={{ FF_VERSION }}" nonce="{{ JS_NONCE }}"></script>
-		    <script src="v1/js/lib/respond.min.js?v={{ FF_VERSION }}" nonce="{{ JS_NONCE }}"></script>
-		    <![endif]-->
+						    <script src="v1/js/lib/html5shiv.min.js?v={{ FF_VERSION }}" nonce="{{ JS_NONCE }}"></script>
+						    <script src="v1/js/lib/respond.min.js?v={{ FF_VERSION }}" nonce="{{ JS_NONCE }}"></script>
+						    <![endif]-->
 
 		{# this entry is in the header so it's loaded early #}
 		<script type="text/javascript" nonce="{{ JS_NONCE }}">
@@ -83,7 +83,8 @@ document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="v1/l
 					<span class="logo-mini">FF</span>
 					{# logo for regular state and mobile devices #}
 					<span class="logo-lg">
-						<strong>Firefly</strong>III</span>
+						<strong>Captain Money</strong>
+					</span>
 				</a>
 
 				<nav class="navbar navbar-static-top" role="navigation">
@@ -249,7 +250,7 @@ var routeForFinishedTour = "{{ route('json.intro.finished', [current_route_name,
 _paq.push(['trackPageView']);
 _paq.push(['enableLinkTracking']);
 (function () {
-var u = "// {{ config('firefly.tracker_url') }}/";
+var u = "//   {{ config('firefly.tracker_url') }}/";
 _paq.push([
 'setTrackerUrl',
 u + 'matomo.php'
